@@ -187,10 +187,12 @@ body {
 .cpy {
   background-color: black;
   color: #fff;
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
+  object-fit: fill;
+  margin: 0%;
 }
 .acheive {
   display: flex;
