@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .nav 
+{
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  list-style-type: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+.nav li a 
+{
+  text-decoration: none;
+  color: black;
+  opacity: 40%;
+  list-style: none;
+
+}
+body 
+{
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+select
+{ 
+    width: 450px;
+    height: 50px;
+}
+.s2
+{ 
+
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(2,1fr);
+column-gap: 20px;
+}
+li
+{ 
+    list-style-type: none;
+}
+input
+{ 
+    width: 600px;
+    height: 50px;
+}
+.s1
+{ 
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin: 40px;
+    height: 80px;
+}
+.container{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.p2
+{ 
+    margin-top: 100px;
+    padding: 90px;
+   background-color: rgba(233, 233, 233, 0.679);
+  padding-top: 60px;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 600px;
+   align-content: center;
+   padding-bottom: 60px;
+   border-radius: 20px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.p2 li
+{ 
+    padding: 10px;  
+}
+table
+{ 
+    border: none;  
+}
+td
+ { 
+     border: none;
+      border-right: 1px solid #999;
+ }
+ tr
+ { 
+     border: 1px solid #999;
+     border-bottom: 1px;
+ }
+ .tdmyr tr
+ { 
+    border-top: none;
+    margin-left: 10px;
+ }
+ .tdmyr td
+ { 
+    border-top:none;
+    border-right: none;
+    border-bottom: 1px solid #999;
+ }
+ .tdmyr table
+ { 
+    padding-left: 10px;
+ }
+ a:hover
+ { 
+    color: red;
+ }
+</style>
+</head>
+<body>
+     <ul>
+        <nav class="nav">
+
+            <li> <font style="color: red;
+            font-size: 45px;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; "
+            
+            ">Zomato</font><font style="font-size: 45px;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">| careers</font> </li>
+            <br><br>
+            <li> <a href="">Life at zomato</a></li>
+            <li> <a href="">Our Team</a></li>
+            <li ><a href="#" style="opacity: 100%;
+            background-color: red;
+            color: #fff;
+            padding: 20px; border-radius: 10px;">Explore openings</a></li>
+        </nav>
+        </ul>
+        <div class="container">
+
+            <div class="hlp" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                     <h2 style="padding-bottom: 10px;  text-decoration: underline red; text-underline-offset: 5px;">Help us to make Zomato more Amazing!</h2>
+                      <br> <p style="opacity: 60%;">We're always looking for great folks to add to the organisational muscle for apportioning work globally while keeping our ears to the ground locally. <br> <br>
+                        If you have passion and see yourself in our vision, we'd love to chat. Explore our careers section to see if there's a role that <br> excites you.  If there isn't one and we like each other, we'll create one for you. <br></p>
+                       </div>
+                        <div class="p1">
+                       <div class="s1">
+                        <h4>search by name</h4>
+                        <form action="">
+                            <input type="text" placeholder="Enter your Keyword" style="padding: 3px; width: 900px; margin: 1px;
+                            padding-left: 5px;">
+                        </form>
+                      </div>
+                       <ul>
+                         <div class="s2">
+                            <li >
+                                <h4>Select location</h4>
+                                <select name="locations" id="loc">
+                                    <option value="1" style="opacity: 50%;">&nbsp;&nbsp;All Locations</option>
+                                    <option value="2">India</option>
+                                    <option value="3">Germany</option>
+                                    <option value="4">Canada</option>
+                                    <option value="5">Austria</option>
+                                    <option value="6">Elon Musk</option>
+                                    <option value="7">China</option>
+                                    <option value="8">Munich</option>
+                                    <option value="9">Ethopia</option>
+                                    <option value="10">Japan</option>
+                                </select>
+                            </li>
+                            <li > 
+                                <h4>Select Department</h4>
+                                <select name="departments" id="dep">
+                                    <option value="0">&nbsp;Departments</option>
+                                    <option value="1">Marketing</option>
+                                    <option value="2">IT</option>
+                                    <option value="3">Accounts</option>
+                                    <option value="4">Delivery partner</option>
+                                    <option value="5">BOD</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </ul>
+                
+            <div class="p2">
+ <table >
+
+     <tr>
+        <td>
+        
+             <ul style="opacity: 50%;">
+                    <li>Departments</li>
+                    <li><a href="#">All Departments</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Human resources</a></li>
+                    <li><a href="#">Non-Technical</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">Intern</a></li>
+                   </ul>
+                   </td>
+                   </tr>
+</table>
+ <div class="tdmyr">
+<table>
+    
+            <ul> 
+                
+                <tr><td style="border-bottom: none"><li style="opacity: 50%;">Featured role</li></tr>
+
+                <tr><td><li><a href="#">[Freelance]&nbsp;Frontend Developer-Amsterdam&nbsp;&nbsp;&rarr;</a><br><font style="opacity: 50%;" >Amsterdam,Netherlands</font></li></tr>
+
+               <tr><td><li><a href="#">Backend Developer-Amsterdam&nbsp;&nbsp;&rarr;</a><br><font style="opacity: 50%;">Amsterdam,Netherlands</font></li></tr>
+
+               <tr><td><li><a href="#">Java Developer-London&nbsp;&nbsp;&rarr;</a> <br><font style="opacity: 50%;" >London</font></li></tr>
+
+                <tr><td><li><a href="">Network Engineer-China&nbsp;&nbsp;&rarr;</a> <br><font style="opacity: 50%;">China 
+                </font></li></tr>
+            </ul>
+
+        </td>
+        </table>
+</div>
+</div> 
+</div>
+</div>
+</body>
+</html>

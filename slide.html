@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Showcase Carousel</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .garage {
+        width: 700px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      .showroom {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .car {
+        display: flex;
+        width: 700px;
+        background: #fff;
+        flex-shrink: 0;
+      }
+      .car img {
+        width: 50%;
+        object-fit: cover;
+      }
+      .specs {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 50%;
+      }
+      .controls {
+        margin-top: 20px;
+      }
+      .controls button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="garage">
+      <div class="showroom" id="showroom">
+        <div class="car">
+          <img src="https://via.placeholder.com/350x250" alt="Car 1" />
+          <div class="specs">
+            This is the description for Car 1. Sleek, stylish and fast.
+          </div>
+        </div>
+        <div class="car">
+          <img src="https://via.placeholder.com/350x250/333/fff" alt="Car 2" />
+          <div class="specs">
+            Car 2 brings elegance and performance together.
+          </div>
+        </div>
+        <div class="car">
+          <img src="https://via.placeholder.com/350x250/f33/fff" alt="Car 3" />
+          <div class="specs">
+            Meet Car 3 — bold, powerful, and impossible to ignore.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevCar()">Prev</button>
+      <button onclick="nextCar()">Next</button>
+    </div>
+
+    <script>
+      const showroom = document.getElementById("showroom");
+      const cars = document.querySelectorAll(".car");
+      const totalCars = cars.length;
+      const carWidth = 700;
+      let currentCar = 0;
+
+      function updateShowroom() {
+        showroom.style.transform = `translateX(-${currentCar * carWidth}px)`;
+      }
+
+      function nextCar() {
+        currentCar = (currentCar + 1) % totalCars;
+        updateShowroom();
+      }
+
+      function prevCar() {
+        currentCar = (currentCar - 1 + totalCars) % totalCars;
+        updateShowroom();
+      }
+    </script>
+  </body>
+</html>
